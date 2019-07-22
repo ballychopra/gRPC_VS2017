@@ -1,0 +1,20 @@
+
+syntax="proto3";
+
+
+package employeeinfo;
+
+service employeeinfoservice
+{
+    rpc getEmployeeInfo (EmployeeInfoRequest) returns (EmployeeInfoResponse)
+    {
+    }
+}
+
+message EmployeeInfoRequest {string ID = 1;}
+
+message EmployeeInfoResponse 
+{
+    string Id = 1;
+    string Name = 2;
+}
